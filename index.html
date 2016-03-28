@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Minesweeper</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <link href="./css/style.css" rel="stylesheet">
+    <script type="text/javascript" src="./js/main.js"></script>
+</head>
+<body>
+<div id="sapper" class="main">
+    <div class="header">Minesweeper</div>
+    <div class="menu">
+        <a>Game
+            <div>
+                <b id="newMini">new Mini</b>
+                <b id="newStandart">new Standart</b>
+                <b id="newMax">new Max</b>
+            </div>
+        </a>
+        <a>Help</a>
+    </div>
+    <div class="content">
+        <div class="timeandmine">
+            <div class="mine">
+                <div>888</div>
+                <div id="mine">071</div>
+            </div>
+            <div class="time">
+                <div>888</div>
+                <div id="time">000</div>
+            </div>
+            <div class="smile">
+                <div></div>
+            </div>
+
+        </div>
+        <div id="fields">
+        </div>
+
+    </div>
+</div>
+<script>
+    var Mines = new Minesweeper();
+    Mines.init();
+    document.getElementById('newMini').addEventListener('click', Mines.newMini);
+    document.getElementById('newMax').addEventListener('click', Mines.newMax);
+    document.getElementById('newStandart').addEventListener('click', Mines.newStandart);
+</script>
+</body>
+</html>

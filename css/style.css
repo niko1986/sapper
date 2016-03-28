@@ -1,0 +1,250 @@
+body {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #000000;
+}
+
+@font-face {
+    font-family: 'Conv_CRISTAL';
+    src: url('../font/11122.eot');
+    src: local('☺'), url('../font/11122.woff') format('woff'), url('../font/11122.ttf') format('truetype'), url('../font/11122.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.main {
+    margin: 0 auto;
+    width: 280px;
+    height: auto;
+    border: 3px solid #E5E5E5;
+    background: #CACED1;
+}
+
+.header {
+    width: 100%;
+    height: 20px;
+    background: #0000B5;
+    color: #ffffff;
+    padding: 1px 0px 0px 30px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+.menu {
+    width: 100%;
+    height: 20px;
+    padding-top: 5px;
+}
+
+.menu a {
+    margin: 5px 10px;
+    cursor: pointer;
+}
+
+.menu a div {
+    background: #b3b7ba;
+    display: none;
+    cursor: pointer;
+    position: absolute;
+    width: 200px;
+    z-index: 20;
+}
+
+.menu a div b {
+    display: block;
+    width: 100%;
+    padding: 5px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+.menu a:hover > div {
+    display: block;
+}
+
+.menu a div b:hover {
+    background: #ced2d5;
+}
+
+.content {
+    width: 100%;
+    min-height: 286px;
+    border: 5px solid #b3b7ba;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+.timeandmine {
+    width: 100%;
+    height: 60px;
+    border-bottom: 5px solid #b3b7ba;
+}
+
+.mine, .time {
+    font-family: 'Conv_CRISTAL';
+    color: #560031;
+    background: #000000;
+    font-size: 65px;
+    float: left;
+    width: 80px;
+    height: 50px;
+    margin: 5px 10px 0px 10px;
+    line-height: 50px;
+    position: relative;
+    padding-left: 3px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+.time {
+    float: right;
+}
+
+#mine, #time {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    font-family: 'Conv_CRISTAL';
+    color: #FE0000;
+    font-size: 65px;
+    width: 80px;
+    height: 50px;
+    padding-left: 3px;
+    line-height: 50px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    overflow: hidden;
+}
+
+.smile {
+    position: relative;
+    width: 50px;
+    height: 60px;
+    margin: 0px auto;
+}
+
+.smile div {
+    height: 100%;
+    width: 100%;
+    background: url('../img/smile.png');
+    background-position: left center;
+    background-repeat: no-repeat;
+}
+
+#fields {
+    width: 270px;
+    height: 270px;
+}
+
+#fields div {
+    width: 26px;
+    height: 21px;
+    border: 2px solid #B3B7BA;
+    float: left;
+    padding-top: 5px;
+    text-align: center;
+    position: relative;
+}
+
+.active {
+    background: #ffffff;
+    font-weight: 600;
+}
+
+.color1 {
+    color: #243dd2;
+}
+
+.color2 {
+    color: #0aab29;
+}
+
+.color3 {
+    color: #a31485;
+}
+
+.color4 {
+    color: #a3a200;
+}
+
+.color5 {
+    color: #009b9d;
+}
+
+.color6 {
+    color: #c00019;
+}
+
+.color7 {
+    color: #9101c0;
+}
+
+.color8 {
+    color: #8cc000;
+}
+
+.mineyes {
+    background: url('../img/bom.png');
+    background-position: center center;
+    background-size: 80% 80%;
+    background-repeat: no-repeat;
+}
+
+.minehel {
+    background: url('../img/flag.png');
+    background-position: center center;
+    background-size: 80% 80%;
+    background-repeat: no-repeat;
+}
+
+.gameOver div {
+    background-position: right center;
+}
+
+.mineyes span {
+    position: absolute;
+    display: block;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: #ff2000;
+    z-index: 1;
+}
+
+.mineyes b {
+    position: absolute;
+    display: block;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: url('../img/bom.png');
+    background-position: center center;
+    background-size: 80% 80%;
+    background-repeat: no-repeat;
+    z-index: 2;
+}
+
+.maxfield {
+    width: 909px;
+}
+
+.maxfield #fields {
+    width: 900px;
+    height: 480px;
+}
+
+.standartfield {
+    width: 399px;
+}
+
+.standartfield #fields {
+    width: 390px;
+    height: 480px;
+}
